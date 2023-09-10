@@ -23,6 +23,7 @@ app.UseStatusCodePagesWithReExecute("/errors/{0}");
     app.UseSwaggerUI();
     
 app.UseStaticFiles();
+app.UseCors("CorsPolicy");
 app.UseAuthorization();
 
 app.MapControllers();
